@@ -18,6 +18,6 @@ pause
 exit /b 0
 :error
 echo.
-echo CO LOI. Hay chup man hinh gui cho Claude.
+echo CO LOI.
 pause
 exit /b 1
