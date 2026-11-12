@@ -148,4 +148,4 @@ def test_tat_ca_mo_hinh_qua_tai_thi_bao_loi_de_hieu_va_dung_sau_3_lan():
     service._client = SimpleNamespace(models=models)
     with pytest.raises(LLMError, match="quá tải"):
         service.generate("xin chao")
-    assert len(models.calls) == llm_module.MAX_MODEL_ATTEMPTS
+    assert models.calls == ["gemini-3.8-flash", "gemini-2.5-flash", "gemini-3.8-flash-lite"]
