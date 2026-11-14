@@ -8,6 +8,7 @@ Ba hàm chính:
 Lưu ý thiết kế: mọi con số đều do Pandas/NumPy tính. LLM chỉ đọc bản tóm tắt này
 và diễn giải lại, nên các con số luôn chính xác và kiểm chứng được bằng test.
 """
+
 from __future__ import annotations
 
 import io
